@@ -1,0 +1,368 @@
+* { margin: 0; padding: 0; }
+
+body {
+  color: #1D2627;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #29B9CD;
+  text-decoration: none;
+}
+
+.btn-link.btn-primary {
+  color: #29B9CD;
+  border-color: #29B9CD;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.max-container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 3.25rem;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 7px;
+  background-color: #5DE7FA;
+}
+
+/* PITCH
+ * -------------------------------------------------------------- */
+
+#pitch {
+  min-height: 100vh;
+  position: relative;
+}
+
+#pitch .bg-wave-figure {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+}
+
+#pitch .bg-wave {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+#pitch-container {
+  position: relative;
+  z-index: 10;
+}
+
+#pitch-container .logo-pich {
+  padding-top: 2rem;
+}
+
+#pitch-container .pitch-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  background-color: red;
+  background: url('../img/pitch-cover.png') no-repeat bottom;
+  background-size: contain;
+}
+
+#pitch-container .pitch-action {
+  color: #fff;
+  max-width: 580px;
+}
+
+#pitch-container .pitch-action h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+#pitch-container .pitch-action p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+#pitch-container .pitch-action h1 strong {
+  color: #1D2627;
+  font-size: 64px;
+  display: block;
+}
+
+/* THE PILATES
+ * -------------------------------------------------------------- */
+#pilates {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  margin-bottom: 100px;
+}
+
+#pilates .description {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #4A666A;
+}
+
+
+#pilates .rewards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  gap: 2rem;
+}
+
+#pilates .rewards li h3 {
+  font-size: 1.125rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#pilates .rewards li p {
+  font-size: 0.875rem;
+  color: #4A666A;
+}
+
+#pilates .rewards svg {
+  margin-right: 1.5rem;
+  float: left;
+}
+
+/* ABOUT ME
+ * -------------------------------------------------------------- */
+#about-me {
+  background-color: #F2FAFB;
+  padding: 3.5rem 0;
+}
+
+#about-me article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 3rem;
+}
+
+#about-me article .profile {
+  text-align: center;
+}
+
+#about-me article .profile h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+#about-me article .profile p {
+  font-size: 1rem;
+  color: #72969B;
+}
+
+
+#about-me article .text {
+  font-size: 1.375rem;
+}
+
+/* TO SCHEDULE
+ * -------------------------------------------------------------- */
+#schedule {
+  text-align: center;
+  padding: 6.25rem 0;
+}
+
+#schedule header {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  margin-bottom: 3.125rem;
+}
+
+#schedule .description {
+  font-size: 1.125rem;
+  margin-bottom: 50px;
+}
+
+#instagram {
+  padding: 50px 0;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+#instagram > div {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .max-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #pitch-container .pitch-info {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #pitch-container .pitch-action {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #pitch-container .pitch-info {
+    display: block;
+    min-height: 70vh;
+    padding-top: 5rem;
+  }
+
+  #pilates {
+    display: block;
+  }
+
+
+  #pilates .photo-pilates-online img {
+    width: 100%;
+  }
+
+  #instagram > div {
+    display: block;
+  }
+
+  #instagram h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #pilates .title {
+    margin-bottom: 2rem;
+  }
+
+  #pilates .rewards {
+    display: block;
+  }
+
+  #pilates .rewards li {
+    min-height: 88px;
+    margin-bottom: 2.5rem;
+  }
+
+  #pilates .rewards li p {
+    font-size: 1rem;
+  }
+
+  #about-me article {
+    display: block;
+  }
+
+  #about-me article .text {
+    font-size: 1.125rem;
+  }
+
+  #about-me article .profile {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .title {
+    font-size: 2.15rem;
+  }
+
+  #pitch-container .pitch-info {
+    display: block;
+  }
+
+
+  #pitch-container .pitch-action h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #pitch-container .pitch-action h1 strong {
+    font-size: 3rem;
+  }
+
+  #pitch-container .pitch-action p {
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #pilates {
+    display: block;
+  }
+
+  #schedule {
+    text-align: left;
+    padding: 6.25rem 2rem;
+  }
+
+  #schedule .description {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  #pitch-container .pitch-info {
+    min-height: 65vh;
+    padding-top: 7rem;
+  }
+
+  #instagram .btn-link,
+  #schedule .btn-link {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 405px) {
+  #pitch {
+    min-height: 75vh;
+    margin-bottom: 4rem;
+  }
+
+  #pitch .bg-wave-figure {
+    height: 100%;
+  }
+
+  #pitch-container .pitch-info {
+    min-height: 70vh;
+  }
+
+  #pitch-container .pitch-action h1 {
+    font-size: 2rem;
+  }
+
+  #pitch-container .pitch-action h1 strong {
+    font-size: 2.5rem;
+  }
+
+  #pilates .rewards li h3 {
+    padding-top: 0;
+  }
+
+  #pilates .rewards li svg {
+    float: none;
+  }
+}
